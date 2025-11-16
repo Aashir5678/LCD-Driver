@@ -1,5 +1,5 @@
 # LCD-Driver
-Arduino code to control a 16x2 LCD with a HD44780U driver using 4-bit data transfer mode
+Arduino library to control a 16x2 LCD with a HD44780U driver using 4-bit data transfer mode
 
 Made using data sheet for the [HD44780 driver](https://www.crystalfontz.com/controllers/datasheet-viewer.php?id=97)
 
