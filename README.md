@@ -1,5 +1,5 @@
 # LCD-Driver
-Arduino code to control an LED
+Arduino code to control a 16x2 LCD with a HD44780U driver
 
 Made using data sheet for HD44780 controller: https://www.crystalfontz.com/controllers/datasheet-viewer.php?id=97
 
