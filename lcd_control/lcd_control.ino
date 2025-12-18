@@ -13,8 +13,7 @@ void setup() {
   pinMode(RS, OUTPUT);
   pinMode(RW, OUTPUT);
   pinMode(ENABLE, OUTPUT);
-  pinMode(BL, OUTPUT);
-
+  
   for (int i = 0; i < 8; i++) {
     pinMode(DATA_PINS[i], OUTPUT);
   }
