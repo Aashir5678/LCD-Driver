@@ -7,9 +7,9 @@ Made using data sheet for the [HD44780 driver](https://www.crystalfontz.com/cont
 
 <img width="1164" height="696" alt="image" src="https://github.com/user-attachments/assets/e8d0690e-e29a-4aa1-aed4-ccf53f0e632e" />
 
-VDD: GND
+VSS: GND
 
-VSS: +5 V
+VDD: +5 V
 
 Vo: Output from 10k potentiometer, for adjusting the backlight
 
