@@ -14,7 +14,7 @@ void setup() {
   pinMode(RW, OUTPUT);
   pinMode(ENABLE, OUTPUT);
   
-  for (int i = 0; i < 8; i++) {
+  for (int i = 0; i < 4; i++) {
     pinMode(DATA_PINS[i], OUTPUT);
   }
 
@@ -24,8 +24,9 @@ void setup() {
 }
 
 void loop() {
+  delay(1000);
   writeTextDelay("Hello, world !");
-  delay(100);
+  delay(1000);
   clearScreen();
 
 }
@@ -71,7 +72,7 @@ void readDataReg() {
 
   delayMicroseconds(5);
 
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < 4; i++) {
     pinMode(DATA_PINS[i], INPUT);
     if (digitalRead(DATA_PINS[i])) {
       highNibble |= 1 << i;
@@ -86,7 +87,7 @@ void readDataReg() {
   digitalWrite(ENABLE, HIGH);
   delayMicroseconds(5);
 
-  for (int i = 0; i < 3; i++) {
+  for (int i = 0; i < 4; i++) {
     pinMode(DATA_PINS[i], INPUT);
     if (digitalRead(DATA_PINS[i])) {
       lowNibble |= 1 << i;
